@@ -1,0 +1,69 @@
+# Dependencies
+node_modules/
+package-lock.json
+yarn.lock
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# IDE specific files
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS specific files
+.DS_Store
+Thumbs.db
+
+# Build artifacts
+/build/
+/artifacts/
+/cache/
+/coverage/
+
+# Hardhat files
+coverage.json
+typechain/
+typechain-types/
+
+# Solidity files
+*.sol.js
+*.sol.ts
+*.sol.d.ts
+
+# Test files
+/test/
+*.test.js
+*.test.ts
+
+# Documentation
+/docs/
+*.md
+!README.md
+
+# Rust build files
+/target/
+**/*.rs.bk
+Cargo.lock
+
+# Build artifacts
+*.o
+*.a
+*.so
+*.dylib
+*.dll
+*.exe
+
+# Debug files
+*.pdb
+*.ilk
+*.idb
+*.pch
+
+# Large binary files
+*.wasm
+*.bin
+*.dat 
