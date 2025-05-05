@@ -155,8 +155,8 @@ This project is licensed under Creative Commons Attribution-NonCommercial-NoDeri
 
 - **Issues**: Use GitHub Issues for bug reports and feature requests
 - **Security**: Report vulnerabilities to security@example.com
-- **Discord**: [Join our community](https://discord.gg/example)
-- **Twitter**: [@LegacyContract](https://twitter.com/example)
+- **Discord**: [Join our community](https://discord.gg/NmJHZjXXHh)
+- **Twitter**: [@LegacyContract](https://twitter.com/@leoninedao)
 
 ## 🙏 Acknowledgments
 
