@@ -113,17 +113,17 @@ Current test coverage: Pending
 
 ## 🗺️ Roadmap
 
-### Phase 1 (Q2 2024)
-- [ ] Core contract development
+### Phase 1 (Q3 2025)
+- [* ] Core contract development
 - [ ] Basic test suite
 - [ ] Initial security audit
 
-### Phase 2 (Q3 2024)
+### Phase 2 (Q4 2025)
 - [ ] Advanced features implementation
 - [ ] Comprehensive testing
 - [ ] External audit
 
-### Phase 3 (Q4 2024)
+### Phase 3 (Q1 2026)
 - [ ] UI/UX development
 - [ ] Mobile app integration
 - [ ] Mainnet deployment
