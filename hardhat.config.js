@@ -2,6 +2,8 @@ require("@nomicfoundation/hardhat-toolbox");
 require("hardhat-gas-reporter");
 require("solidity-coverage");
 require('dotenv').config();
+require("@matterlabs/hardhat-zksync-deploy");
+require("@matterlabs/hardhat-zksync-solc");
 
 /** @type import('hardhat/config').HardhatUserConfig */
 module.exports = {
@@ -11,7 +13,8 @@ module.exports = {
       optimizer: {
         enabled: true,
         runs: 200
-      }
+      },
+      viaIR: true
     }
   },
   networks: {
@@ -20,9 +23,18 @@ module.exports = {
       url: "http://127.0.0.1:8545"
     },
     sepolia: {
-      url: `https://eth-sepolia.g.alchemy.com/v2/4QoDmZlycUWsehWv0KSde-9CA4QZXxWO`,
-      chainId: 11155111,
-      accounts: process.env.PRIVATE_KEY ? [process.env.PRIVATE_KEY] : []
+      url: process.env.SEPOLIA_RPC_URL || "",
+      accounts: process.env.PRIVATE_KEY ? [process.env.PRIVATE_KEY] : [],
+    },
+    goerli: {
+      url: process.env.GOERLI_RPC_URL || "",
+      accounts: process.env.PRIVATE_KEY ? [process.env.PRIVATE_KEY] : [],
+      zksync: true
+    },
+    mainnet: {
+      url: process.env.MAINNET_RPC_URL || "",
+      accounts: process.env.PRIVATE_KEY ? [process.env.PRIVATE_KEY] : [],
+      zksync: true
     }
   },
   gasReporter: {
@@ -34,5 +46,16 @@ module.exports = {
     tests: "./test",
     cache: "./cache",
     artifacts: "./artifacts"
-  }
+  },
+  etherscan: {
+    apiKey: process.env.ETHERSCAN_API_KEY,
+  },
+  zksolc: {
+    version: "1.3.5",
+    compilerSource: "binary",
+    settings: {
+      isSystem: true,
+      forceEvmla: false,
+    },
+  },
 }; 

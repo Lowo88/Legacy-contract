@@ -2,10 +2,32 @@
 pragma solidity ^0.8.20;
 
 library LegacyTypes {
+    enum VerificationMethod {
+        HEARTBEAT,
+        FACE_SCAN,
+        FINGERPRINT,
+        VOICE_RECOGNITION,
+        MULTI_SIG
+    }
+
+    struct VerificationConfig {
+        bool isEnabled;
+        VerificationMethod method;
+        uint256 lastVerification;
+        uint256 verificationInterval;
+        address[] verifiers;  // For multi-sig or other multi-party verification
+        uint256 requiredVerifications;  // For multi-sig or other multi-party verification
+    }
+
     struct Vault {
         uint256 amount;
         uint256 unlockTimestamp;
         address beneficiary;
+        address admin;
+        bool isAdminActive;
+        bool hasDeadManSwitch;
+        VerificationConfig verificationConfig;
+        address successor;
     }
 
     struct PrivateVault {
@@ -13,6 +35,11 @@ library LegacyTypes {
         uint256 unlockTimestamp;
         bytes proof;
         bytes32[] publicInputs;
+        address admin;
+        bool isAdminActive;
+        bool hasDeadManSwitch;
+        VerificationConfig verificationConfig;
+        address successor;
     }
 
     struct PrivateAsset {
@@ -61,5 +88,24 @@ library LegacyTypes {
         uint256 requiredSignatures;
         bytes32 operationHash;
         bool executed;
+    }
+
+    struct AdminRequest {
+        address requester;
+        address newAdmin;
+        uint256 timestamp;
+        bool isApproved;
+    }
+
+    struct SuccessorRequest {
+        address requester;
+        address newSuccessor;
+        uint256 timestamp;
+        bool isApproved;
+    }
+
+    struct ShieldedBalance {
+        uint256 amount;
+        uint256 lastUpdate;
     }
 } 

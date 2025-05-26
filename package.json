@@ -9,6 +9,8 @@
     "deploy": "hardhat run scripts/deploy.js --network <network>"
   },
   "devDependencies": {
+    "@matterlabs/zksync-contracts": "^0.1.0",
+    "@matterlabs/zksync-web3": "^0.1.0",
     "@nomicfoundation/hardhat-chai-matchers": "^2.0.0",
     "@nomicfoundation/hardhat-network-helpers": "^1.0.0",
     "@nomicfoundation/hardhat-toolbox": "^3.0.0",

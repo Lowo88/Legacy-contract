@@ -21,7 +21,9 @@ contract Halo2Verifier is Ownable {
     // Constants
     uint256 public constant MAX_PROOF_AGE = 1 days;
 
-    constructor() Ownable(msg.sender) {}
+    constructor() Ownable() {
+        // Initialize verifier
+    }
 
     // Function to verify a Halo2 proof
     function verifyProof(
