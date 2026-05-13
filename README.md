@@ -155,15 +155,13 @@ This project is licensed under Creative Commons Attribution-NonCommercial-NoDeri
 
 - **Issues**: Use GitHub Issues for bug reports and feature requests
 - **Security**: Report vulnerabilities to security@example.com
-- **Discord**: [Join our community](https://discord.gg/NmJHZjXXHh)
-- **Twitter**: [@LegacyContract](https://twitter.com/@leoninedao)
+- **Twitter**: [@Ladalelowo](https://twitter.com/@leoninedao)
 
 ## 🙏 Acknowledgments
 
 - OpenZeppelin for security patterns
 - Halo2 team for ZK-proof framework
-- Ethereum Foundation for documentation
-- Community contributors
+
 
 ---
 ⚠️ **Disclaimer**: This project is in active development. Use at your own risk. 
