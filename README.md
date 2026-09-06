@@ -3,7 +3,7 @@
 A Privacy-Preserving Smart Contract for Digital Asset Inheritance
 
 [![Solidity](https://img.shields.io/badge/Solidity-%5E0.8.0-blue)](https://soliditylang.org/)
-[![License](https://img.shields.io/badge/License-CC%20BY--NC--ND%204.0-lightgrey.svg)](LICENSE)
+[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![Security: Audited](https://img.shields.io/badge/Security-Pending%20Audit-yellow)](SECURITY.md)
 [![Test Coverage](https://img.shields.io/badge/Coverage-Pending-yellow)](TESTS.md)
 
@@ -142,14 +142,11 @@ We welcome contributions! Please see our [Contributing Guidelines](CONTRIBUTING.
 
 ## 📄 License
 
-This project is licensed under Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0).
+This project is licensed under the **MIT License** — see [LICENSE](LICENSE). Solidity sources already used `SPDX-License-Identifier: MIT`; this README previously listed CC BY-NC-ND by mistake.
 
-### Permissions
-- ✅ View and study the code
-- ✅ Share the code
-- ❌ Commercial use
-- ❌ Code modifications
-- ❌ Derivative works
+### Relation to NozyWallet
+
+This EVM vault holds an ERC-20 (`LGC`), not Zcash Ironwood notes. Inheritance / yield-while-waiting for **cTAZ** is a **NozyWallet Crosslink lab** (feature-net stake → earn on bond → unbond → withdraw). Do not treat these Solidity contracts as Ironwood custody.
 
 ## 📞 Contact & Support
 
